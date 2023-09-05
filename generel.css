@@ -1,0 +1,175 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "tekst", system-ui;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #F19E8E;
+    background-color: #58656D;
+}
+
+main {
+    max-width: 1000px;
+    margin-inline: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    display: block;
+    padding: 10px;
+}
+
+@font-face {
+    font-family: "overskrift";
+    src: url("roboto-bold-webfont.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "tekst";
+    src: url("trirong-light-webfont.woff2") format("woff2");
+}
+
+a:link{
+    color: #F19E8E; 
+}
+
+a:visited {
+    color: #b38a82;
+}
+
+h1 {
+    color: #98756F;
+    font-family: "overskrift", system-ui;
+    font-size: 2.5rem;
+    padding: 15px 0px 10px 0px;
+}
+
+h2 {
+    color: #b38a82;
+    font-family: "overskrift", system-ui;
+    font-size: 1.80rem;
+    padding: 5px 0px 5px 0px;
+}
+
+h3 {
+    color: #c3958b;
+    font-family: "overskrift", system-ui;
+    font-size: 1.10rem;
+    padding: 5px 0px 5px 0px;
+}
+
+p {
+    padding: 2px 0px 2px 0px;
+    margin-block: 10px;
+}
+
+.col1 {
+    margin-bottom: 30px;
+}
+
+.card a {
+    background-color: #98756F;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 15px;
+    margin: 20px 0px 0px 0px;  
+    display: inline-block;
+}
+
+.grid_1-1 > dt {
+    color: #c3958b;
+    font-size: 1.20em;
+    font-weight: bold;
+}
+
+.grid_1-1 > dd {
+    color: white;
+    font-size: 1.1em;
+    padding-left: 0.2em;
+}
+
+.dt_1 {
+    margin-right: 5px;
+}
+
+.tekst_1 {
+    max-width: 65ch;
+}
+
+header {
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 700;
+}
+
+footer {
+    text-align: center;
+}
+
+.footer {
+    margin-top: 90px;
+}
+
+
+@media (min-width: 700px) {
+
+    header  {
+        position: sticky;
+        top: 0;
+        padding: 1rem 2rem;
+        box-shadow: 0 12px 28px 0 rgb(0 0 0 /30%);
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        background-color: #58656D;
+    }
+    
+    header .logo a {
+        font-size: 2rem;
+    }
+    
+    header nav ul {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        margin: 0; 
+        padding: 0;
+        padding-bottom: 0.4rem;
+        gap: 30px;
+        overflow-x: auto;
+    }
+    
+    a {
+        text-decoration: none;
+        font-weight: 700;
+        color: #F19E8E;
+    }
+    
+    a:hover {
+        color: #98756F;
+    }
+
+    .grid_1-1-1-1 img {
+        align-self: stretch;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 700px) {
+    main {
+        padding-inline: 10px;
+    }
+}
